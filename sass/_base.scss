@@ -1,0 +1,44 @@
+$color-primary: #000;
+$color-grey-light: #d6d1d1;
+
+$color-paragraph: #c9c6c6;
+
+$color-grey-dark: #333;
+$color-button: #ebd663;
+
+$font-display: 'Prata', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+//RESPONSIVE BREAKPOINTS
+$bp-biggest: 87.5em;
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+}
+}
+
+body {
+  font-family: $font-body;
+  line-height: 1.6;
+  background-color: $color-primary;
+  
+}
